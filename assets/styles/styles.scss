@@ -1,0 +1,130 @@
+html {
+  background-image: url(assets/images/body-bg.png);
+  background-repeat: repeat-y;
+  background-position: center center;
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+}
+body {
+  height: 100%;
+  min-height: 600px;
+  width: 990px;
+  padding: 0px;
+  position: relative;
+  background-image: url(assets/images/author.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-bottom: 0px;
+  margin-left: auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.author {
+  color: #FFF;
+  position: absolute;
+  top: 40px;
+  right: 0px;
+  font-size: 24px;
+  text-align: center;
+}
+.author span {
+  font-size: 14px;
+  display: block;
+  word-spacing: 3px;
+}
+.main {
+  position: absolute;
+  left: 0px;
+  top: 40px;
+  font-size: 14px;
+  line-height: 22px;
+}
+.main a {
+  color: #8e9099;
+  text-decoration: none;
+}
+.main a:hover {
+  color: #2f3033;
+}
+.pechat {
+  display: block;
+  position: absolute;
+  right: 0px;
+  top: 430px;
+}
+.main a.action {
+  color: #2f3033;
+}
+.gallery {
+  position: absolute;
+  top: 45px;
+  width: 600px;
+  left: 200px;
+}
+.gallery .centerIMG {
+  text-decoration: none;
+  border-top-style: none;
+  border-right-style: none;
+  border-bottom-style: none;
+  border-left-style: none;
+  outline: none;
+  display: block;
+  height: 500px;
+  width: 500px;
+  position: relative;
+}
+#img1 {
+  border-color: #8e9099;
+  top: 0px;
+}
+#img2 {
+  top: 75px;
+}
+#img3 {
+  top: 150px;
+}
+#img4 {
+  top: 225px;
+}
+#img5 {
+  top: 300px;
+}
+.description {
+  color: #2f3033;
+  position: absolute;
+  top: 180px;
+  right: 0px;
+  font-size: 14px;
+  text-align: right;
+}
+.caption {
+  color: #2f3033;
+  position: absolute;
+  top: 505px;
+  right: 0px;
+  font-size: 12px;
+  text-align: right;
+}
+.main_wr {
+  position: absolute;
+  left: 0px;
+  top: 180px;
+  width: 100px;
+}
+.main_wr a {
+  border: 1px solid #d5d6db;
+  display: block;
+  margin: 0px;
+  padding: 0px;
+  position: absolute;
+  height: 63px;
+  width: 63px;
+}
+.main_wr img {
+  height: 63px;
+  width: 63px;
+}

@@ -1,7 +1,10 @@
 <template>
-  <Tutorial />
+  <main-page />
 </template>
 
 <script>
-export default {}
+import MainPage from '~/components/MainPage'
+export default {
+  components: { MainPage }
+}
 </script>
