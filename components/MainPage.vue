@@ -1,7 +1,9 @@
 <template>
-  <div>
+  <div id="app">
     <div class="main">
-      <NuxtLink to="/gallery">ГАЛЕРЕЯ</NuxtLink>
+      <NuxtLink to="/gallery">
+        ГАЛЕРЕЯ
+      </NuxtLink>
       <br>
       <a href="words.html">СЛОВА</a><br>
       <a href="contact.html">КОНТАКТ</a>
@@ -15,10 +17,26 @@
 
 <script>
 export default {
-  name: 'MainPage'
+  name: 'MainPage',
+  computed: {
+    backgroundStyle () {
+      return {
+        'background-image': 'url(`@/assets/images/author.png`)',
+        'background-repeat': 'no-repeat',
+        'background-position': 'center bottom'
+      }
+    }
+  }
 }
 </script>
-
 <style scoped>
+#app {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url(assets/images/author.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
 
 </style>

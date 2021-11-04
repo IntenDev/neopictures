@@ -8,3 +8,6 @@ export default {
   components: { MainPage }
 }
 </script>
+<style scoped>
+
+</style>
