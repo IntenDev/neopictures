@@ -22,18 +22,12 @@
       </a>
     </div>
     <div class="gallery">
-      <a :href="require(`~/assets/images/collections/${currentCollection.folder}/${pictureSite}`)" target="_blank" class="centerIMG">
-        <img :src="require(`~/assets/images/collections/${currentCollection.folder}/${pictureBig}`)" width="500" height="500">
+      <a :href="require(`~/assets/images/collections/${currentCollection.folder}/${pictureBig.site}`)" target="_blank" class="centerIMG">
+        <img :src="require(`~/assets/images/collections/${currentCollection.folder}/${pictureBig.mod}`)" width="500" height="500">
       </a>
     </div>
     <div class="description">
-      <em>&hellip; Заблудилась<br>
-        Юная Иволга<br>
-        В небесных полях,<br>
-        Ищет нас с тобою<br>
-        Любимая,<br>
-        Среди облаков &hellip;<br>
-      </em>
+      <em v-html="pictureBig.description" />
     </div>
     <img class="pechat" src="~/assets/images/pechat.png" width="25" height="22">
     <div class="caption">
@@ -51,8 +45,7 @@ export default {
   data () {
     return {
       collections: data,
-      pictureBig: data[0].pictures[0].mod,
-      pictureSite: data[0].pictures[0].site,
+      pictureBig: data[0].pictures[0],
       isAction: false
     }
   },
@@ -66,7 +59,7 @@ export default {
   },
   methods: {
     selectPicture (index) {
-      this.pictureBig = data[0].pictures[index].mod
+      this.pictureBig = data[0].pictures[index]
     },
     makeAction () {
       this.isAction = true
