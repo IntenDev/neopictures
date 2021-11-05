@@ -5,7 +5,7 @@
         ГЛАВНАЯ
       </NuxtLink>
       <br>
-      <a href="/gallery" class="action">ГАЛЕРЕЯ &bull;</a><br>
+      <a href="gallery" class="action">ГАЛЕРЕЯ &bull;</a><br>
       <a href="words.html">СЛОВА</a><br>
       <a href="contact.html">КОНТАКТ</a>
     </div>
@@ -14,20 +14,20 @@
     </div>
     <div class="main_wr">
       <a
-        v-for="(picture, index) in currentCollection.pictures"
+        v-for="(pic, index) in currentCollection.pictures"
         :id="'img'+ (index + 1)"
         :key="index"
       >
-        <img :src="require(`~/assets/images/collections/${currentCollection.folder}/${picture.min}`)" width="99" height="99" :class="{ action: isAction }" @click="selectPicture(index); makeAction()">
+        <img :src="require(`~/assets/images/collections/${currentCollection.folder}/${pic.min}`)" width="99" height="99" :class="{ action: isAction }" @click="selectPicture(index); makeAction()">
       </a>
     </div>
     <div class="gallery">
-      <a :href="require(`~/assets/images/collections/${currentCollection.folder}/${pictureBig.site}`)" target="_blank" class="centerIMG">
-        <img :src="require(`~/assets/images/collections/${currentCollection.folder}/${pictureBig.mod}`)" width="500" height="500">
+      <a :href="require(`~/assets/images/collections/${currentCollection.folder}/${picture.site}`)" target="_blank" class="centerIMG">
+        <img :src="require(`~/assets/images/collections/${currentCollection.folder}/${picture.mod}`)" width="500" height="500">
       </a>
     </div>
     <div class="description">
-      <em v-html="pictureBig.description" />
+      <em v-html="picture.description" />
     </div>
     <img class="pechat" src="~/assets/images/pechat.png" width="25" height="22">
     <div class="caption">
@@ -45,7 +45,7 @@ export default {
   data () {
     return {
       collections: data,
-      pictureBig: data[0].pictures[0],
+      picture: data[0].pictures[0],
       isAction: false
     }
   },
@@ -59,7 +59,7 @@ export default {
   },
   methods: {
     selectPicture (index) {
-      this.pictureBig = data[0].pictures[index]
+      this.picture = data[0].pictures[index]
     },
     makeAction () {
       this.isAction = true
