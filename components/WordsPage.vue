@@ -4,7 +4,7 @@
       <a href="/">ГЛАВНАЯ</a><br>
       <a href="/gallery">ГАЛЕРЕЯ</a><br>
       <a href="/words" class="action">СЛОВА &bull;</a><br>
-      <a href="contact.html">КОНТАКТ</a>
+      <a href="/contact">КОНТАКТ</a>
     </div>
     <div class="author">
       НЕОКАРТИНЫ <span>АЛЕКСЕЯ АНИСИМОВА<sup>Ѓ</sup></span>
@@ -106,7 +106,7 @@
           ученик  Ле Корбюзье, Москва, Россия.</span>
       </p>
     </div>
-    <img class="pechat" src="images/pechat.png" width="25" height="22">
+    <img class="pechat" src="~/assets/images/pechat.png" width="25" height="22">
   </div>
 </template>
 
