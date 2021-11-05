@@ -3,7 +3,7 @@
     <div class="main">
       <a href="/gallery">ГАЛЕРЕЯ</a><br>
       <a href="/words">СЛОВА</a><br>
-      <a href="contact.html">КОНТАКТ</a>
+      <a href="/contact">КОНТАКТ</a>
     </div>
     <div class="author">
       НЕОКАРТИНЫ <span>АЛЕКСЕЯ АНИСИМОВА<sup>Ѓ</sup></span>

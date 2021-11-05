@@ -4,7 +4,7 @@
       <a href="/">ГЛАВНАЯ</a><br>
       <a href="/gallery" class="action">ГАЛЕРЕЯ &bull;</a><br>
       <a href="/words">СЛОВА</a><br>
-      <a href="contact.html">КОНТАКТ</a>
+      <a href="/contact">КОНТАКТ</a>
     </div>
 
     <div class="author">
