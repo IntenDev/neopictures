@@ -1,11 +1,8 @@
 <template>
   <div id="app">
     <div class="main">
-      <NuxtLink to="/gallery">
-        ГАЛЕРЕЯ
-      </NuxtLink>
-      <br>
-      <a href="words.html">СЛОВА</a><br>
+      <a href="/gallery">ГАЛЕРЕЯ</a><br>
+      <a href="/words">СЛОВА</a><br>
       <a href="contact.html">КОНТАКТ</a>
     </div>
     <div class="author">
