@@ -106,7 +106,7 @@
           ученик  Ле Корбюзье, Москва, Россия.</span>
       </p>
     </div>
-    <img class="pechat" src="images/pechat.png" width="25" height="22">
+    <img class="pechat" src="~/assets/images/pechat.png" width="25" height="22">
   </div>
 </template>
 
