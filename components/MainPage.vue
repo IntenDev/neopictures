@@ -1,9 +1,18 @@
 <template>
   <div id="app">
     <div class="main">
-      <a href="/gallery">ГАЛЕРЕЯ</a><br>
-      <a href="/words">СЛОВА</a><br>
-      <a href="/contact">КОНТАКТ</a>
+      <NuxtLink to="/gallery">
+        ГАЛЕРЕЯ
+      </NuxtLink>
+      <br>
+      <NuxtLink to="/words">
+        СЛОВА
+      </NuxtLink>
+      <br>
+      <NuxtLink to="/contact">
+        КОНТАКТ
+      </NuxtLink>
+      <br>
     </div>
     <div class="author">
       НЕОКАРТИНЫ <span>АЛЕКСЕЯ АНИСИМОВА<sup>Ѓ</sup></span>

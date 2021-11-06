@@ -1,10 +1,22 @@
 <template>
   <div>
     <div class="main">
-      <a href="/">ГЛАВНАЯ</a><br>
-      <a href="/gallery">ГАЛЕРЕЯ</a><br>
-      <a href="/words">СЛОВА</a><br>
-      <a href="/contact" class="action">КОНТАКТ  &bull;</a>
+      <NuxtLink to="/">
+        ГЛАВНАЯ
+      </NuxtLink>
+      <br>
+      <NuxtLink to="/gallery">
+        ГАЛЕРЕЯ
+      </NuxtLink>
+      <br>
+      <NuxtLink to="/words">
+        СЛОВА
+      </NuxtLink>
+      <br>
+      <NuxtLink to="/contact" class="action">
+        КОНТАКТ &bull;
+      </NuxtLink>
+      <br>
     </div>
     <div class="author">
       НЕОКАРТИНЫ <span>АЛЕКСЕЯ АНИСИМОВА<sup>Ѓ</sup></span>
