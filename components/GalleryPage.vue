@@ -1,10 +1,22 @@
 <template>
   <div>
     <div class="main">
-      <a href="/">ГЛАВНАЯ</a><br>
-      <a href="/gallery" class="action">ГАЛЕРЕЯ &bull;</a><br>
-      <a href="/words">СЛОВА</a><br>
-      <a href="/contact">КОНТАКТ</a>
+      <NuxtLink to="/">
+        ГЛАВНАЯ
+      </NuxtLink>
+      <br>
+      <NuxtLink to="/gallery" class="action">
+        ГАЛЕРЕЯ &bull;
+      </NuxtLink>
+      <br>
+      <NuxtLink to="/words">
+        СЛОВА
+      </NuxtLink>
+      <br>
+      <NuxtLink to="/contact">
+        КОНТАКТ
+      </NuxtLink>
+      <br>
     </div>
 
     <div class="author">
@@ -16,15 +28,16 @@
         :id="'img'+ (index + 1)"
         :key="index"
       >
-        <img :src="require(`~/assets/images/collections/${currentCollection.folder}/${pic.min}`)" width="99" height="99" :class="{ action: isAction }" @click="selectPicture(index); makeAction()">
+        <img :src="require(`~/assets/images/collections/${currentCollection.folder}/${pic.min}`)" width="99" height="99" :class="{ active: picture === pic }" @click="picture = pic">
       </a>
     </div>
     <div class="gallery">
       <a :href="require(`~/assets/images/collections/${currentCollection.folder}/${picture.site}`)" target="_blank" class="centerIMG">
-        <img :src="require(`~/assets/images/collections/${currentCollection.folder}/${picture.mod}`)" width="500" height="500">
+        <img :src="require(`~/assets/images/collections/${currentCollection.folder}/${picture.mod}`)" width="500" height="500" alt="">
       </a>
     </div>
     <div class="description">
+      <!-- eslint-disable vue/no-v-html -->
       <em v-html="picture.description" />
     </div>
     <img class="pechat" src="~/assets/images/pechat.png" width="25" height="22">
@@ -42,9 +55,7 @@ export default {
   name: 'GalleryPage',
   data () {
     return {
-      collections: data,
-      picture: data[0].pictures[0],
-      isAction: false
+      picture: null
     }
   },
   computed: {
@@ -55,13 +66,8 @@ export default {
       return this.collectionData[0]
     }
   },
-  methods: {
-    selectPicture (index) {
-      this.picture = data[0].pictures[index]
-    },
-    makeAction () {
-      this.isAction = true
-    }
+  created () {
+    this.picture = this.currentCollection.pictures[0]
   }
 }
 
