@@ -106,8 +106,8 @@ body {
   width: 63px;
 }
 .main_wr img {
-  height: 63px;
-  width: 63px;
+  height: 62px;
+  width: 62px;
 }
 // Добавил выделение картинок-иконок
 .main_wr a:hover {
@@ -198,17 +198,16 @@ body {
     width: 63px;
   }
   .main_wr a img {
-    width: 63px;
-    height: 63px;
+    width: 62px;
+    height: 62px;
   }
   .caption {
-    display: none;
-    /*color: #2f3033;
-    position: absolute;
-    top: 505px;
-    right: 0px;
+    /*display: none;*/
+    color: #2f3033;
+    position: relative;
+    top: 10px;
     font-size: 12px;
-    text-align: right;*/
+    text-align: right;
   }
 
   #author{
