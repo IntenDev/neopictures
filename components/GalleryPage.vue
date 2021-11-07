@@ -1,27 +1,30 @@
 <template>
-  <div>
-    <div class="main">
-      <NuxtLink to="/">
-        ГЛАВНАЯ
-      </NuxtLink>
-      <br>
-      <NuxtLink to="/gallery" class="action">
-        ГАЛЕРЕЯ &bull;
-      </NuxtLink>
-      <br>
-      <NuxtLink to="/words">
-        СЛОВА
-      </NuxtLink>
-      <br>
-      <NuxtLink to="/contact">
-        КОНТАКТ
-      </NuxtLink>
-      <br>
+  <div class=" container">
+    <div class="row">
+      <div class="main col">
+        <NuxtLink to="/">
+          ГЛАВНАЯ
+        </NuxtLink>
+        <br>
+        <NuxtLink to="/gallery" class="action">
+          ГАЛЕРЕЯ &bull;
+        </NuxtLink>
+        <br>
+        <NuxtLink to="/words">
+          СЛОВА
+        </NuxtLink>
+        <br>
+        <NuxtLink to="/contact">
+          КОНТАКТ
+        </NuxtLink>
+        <br>
+      </div>
+
+      <div class="author col">
+        НЕОКАРТИНЫ <span>АЛЕКСЕЯ АНИСИМОВА<sup>Ѓ</sup></span>
+      </div>
     </div>
 
-    <div class="author">
-      НЕОКАРТИНЫ <span>АЛЕКСЕЯ АНИСИМОВА<sup>Ѓ</sup></span>
-    </div>
     <div class="main_wr">
       <a
         v-for="(pic, index) in currentCollection.pictures"
@@ -33,7 +36,7 @@
     </div>
     <div class="gallery">
       <a :href="require(`~/assets/images/collections/${currentCollection.folder}/${picture.site}`)" target="_blank" class="centerIMG">
-        <img :src="require(`~/assets/images/collections/${currentCollection.folder}/${picture.mod}`)" width="500" height="500" alt="">
+        <img :src="require(`~/assets/images/collections/${currentCollection.folder}/${picture.mod}`)" alt="">
       </a>
     </div>
     <div class="description">
