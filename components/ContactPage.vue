@@ -1,32 +1,11 @@
 <template>
   <div>
-    <div class="main">
-      <NuxtLink to="/">
-        ГЛАВНАЯ
-      </NuxtLink>
-      <br>
-      <NuxtLink to="/gallery">
-        ГАЛЕРЕЯ
-      </NuxtLink>
-      <br>
-      <NuxtLink to="/words">
-        СЛОВА
-      </NuxtLink>
-      <br>
-      <NuxtLink to="/contact" class="action">
-        КОНТАКТ &bull;
-      </NuxtLink>
-      <br>
-    </div>
-    <div class="author">
-      НЕОКАРТИНЫ <span>АЛЕКСЕЯ АНИСИМОВА<sup>Ѓ</sup></span>
-    </div>
     <div id="addres">
       neokartina@mail.ru
       <!--,<br>
   +7 916 471 7711-->
     </div>
-    <img class="pechat" src="~/assets/images/pechat.png" width="25" height="22">
+    <img class="pechat" src="~/assets/images/pechat.png" width="25" height="22" alt="Печать">
   </div>
 </template>
 

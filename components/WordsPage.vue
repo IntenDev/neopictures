@@ -1,27 +1,6 @@
 <template>
   <div>
-    <div class="main">
-      <NuxtLink to="/">
-        ГЛАВНАЯ
-      </NuxtLink>
-      <br>
-      <NuxtLink to="/gallery">
-        ГАЛЕРЕЯ
-      </NuxtLink>
-      <br>
-      <NuxtLink to="/words" class="action">
-        СЛОВА &bull;
-      </NuxtLink>
-      <br>
-      <NuxtLink to="/contact">
-        КОНТАКТ
-      </NuxtLink>
-      <br>
-    </div>
-    <div class="author">
-      НЕОКАРТИНЫ <span>АЛЕКСЕЯ АНИСИМОВА<sup>Ѓ</sup></span>
-    </div>
-    <div class="words" style="font-size: 14px">
+    <div class="words">
       <p>
         <em>&nbsp;&laquo;&hellip; Господин Алексей Анисимов, Международным жюри  Фестиваля Дизайна Ваше произведение искусства признано выдающимся &hellip;&raquo;</em><br>
         <span style="font-size: 12px">Окатани  Ясодзи <br>
@@ -118,7 +97,7 @@
           ученик  Ле Корбюзье, Москва, Россия.</span>
       </p>
     </div>
-    <img class="pechat" src="~/assets/images/pechat.png" width="25" height="22">
+    <img class="pechat" src="~/assets/images/pechat.png" width="25" height="22" alt="Печать">
   </div>
 </template>
 
@@ -131,10 +110,11 @@ export default {
 <style scoped>
 .words {
   position: absolute;
-  left: 0px;
+  left: 0;
   top: 150px;
-  right: 0px;
+  right: 0;
   padding-bottom: 30px;
   color: #2F3033;
+  font-size: 14px;
 }
 </style>
