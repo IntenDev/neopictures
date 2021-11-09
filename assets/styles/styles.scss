@@ -42,8 +42,8 @@ color: #2f3033;
 .pechat {
 display: block;
 position: absolute;
-right: 120px;
-top: 430px;
+right: 10px;
+top: 370px;
 }
 .gallery {
 /*position: absolute;
@@ -107,13 +107,16 @@ border-color: #8e9099;
 .active {
 border: 1px solid #8e9099;
 }
+.words {
+  color: #2F3033;
+}
 
-/*#author{
+#author{
 position: absolute;
-width: 100%;
+width: 990px;
 bottom: 0;
 
-}*/
+}
 .center {
 display: block;
 margin-left: auto;

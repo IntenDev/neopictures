@@ -25,9 +25,8 @@
           {{ currentCollection.specific }},<br>
           {{ currentCollection.technology }}.
         </div>
+        <img class="pechat" src="~/assets/images/pechat.png" width="25" height="22" alt="Печать">
       </div>
-
-      <img class="pechat" src="~/assets/images/pechat.png" width="25" height="22" alt="Печать">
     </div>
   </div>
 </template>

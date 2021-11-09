@@ -1,11 +1,16 @@
 <template>
-  <div>
-    <div id="addres">
-      neokartina@mail.ru
-      <!--,<br>
+  <div class="section container">
+    <div class="row">
+      <div class="col" />
+      <div id="addres" class="col">
+        neokartina@mail.ru
+        <!--,<br>
   +7 916 471 7711-->
+      </div>
+      <div class="col">
+        <img class="pechat" src="~/assets/images/pechat.png" width="25" height="22" alt="Печать">
+      </div>
     </div>
-    <img class="pechat" src="~/assets/images/pechat.png" width="25" height="22" alt="Печать">
   </div>
 </template>
 
@@ -17,14 +22,7 @@ export default {
 
 <style scoped>
 #addres {
-  font-size: 24px;
-  position: absolute;
-  left: 370px;
-  margin: 0px;
-  padding-top: 0px;
-  padding-right: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
+  font-size: 2rem;
   color: #5f6066;
   top: 200px;
   text-align: center;
